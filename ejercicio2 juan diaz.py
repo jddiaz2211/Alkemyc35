@@ -3,7 +3,7 @@ class Animal:
         self.cantidad_patas = cantidad_patas
     
     def comer(self):
-        return "Estoy comiendo"
+        return "Estoy comiendo, rico"
 
 class Perro(Animal):
     def __init__(self, cantidad_patas, nombre, raza):
@@ -19,7 +19,7 @@ class Aguila(Animal):
         return "Estoy volando"
 
 
-perro = Perro(4, "Bobby", "Labrador")
+perro = Perro(4, "doki", "Corgi")
 print(perro.comer())
 print (f"""{perro.nombre} ya comio""")
 print (".........")

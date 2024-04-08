@@ -1,0 +1,19 @@
+Nombre: Juan Diego
+Apellido: Diaz Diaz
+Curso: POO en Python Alkemy Comision 35
+superuser ID: super
+superuser PW: super 
+github: https://github.com/jddiaz2211
+
+Observaciones: al terminar exitosamente un registro de producto o proveedor,
+se inteento implementar un mensaje de operacion exitosa, mediante la funcion
+'message' de django, pero no funcionaba correctamente. Este problema
+soluciono mediante la creacion de un template llamado succes.html, el cual
+contiene un mensaje de operacion exitosa, de esta forma al completar un
+registro de producto exitosamente, el usuario es redireccionado  a este 
+template, y posteriormente vuelve a la pagina de inicio.
+
+No se pudo implementar la función de agregar un nuevo proovedor durante el
+proceso de Agregar Nuevo Producto, lo cual implica que se necesita dar de alta 
+al proveedor previamente. Esto podria afectar negativamente la productividad 
+de los usuarios.

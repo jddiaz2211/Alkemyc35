@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Productos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <form class="principal">
+            <h1 id="titulo">Listado de Productos</h1>
+            <ul class="list-group list-group-numbered" >
+                {% for producto in productos %}          
+                <ul class=" list-group-horizontal list-group ">
+                    <li class="list-group-item flex-fill">{{ producto.nombre }}</li>
+                    <li class="list-group-item flex-fill"> Precio: {{ producto.precio }}</li>
+                    <li class="list-group-item flex-fill">Stock: {{ producto.stock_actual }}</li>
+                  </ul>
+                {% endfor %}
+            </ul>
+        </form>
+        <a href="{% url 'index' %}" class="btn btn-secondary">Volver</a>
+    </div>
+</body>
+</html>

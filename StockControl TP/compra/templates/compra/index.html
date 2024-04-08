@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">    
+        <form class="principal">
+            <img class="aprobado" src="{% static 'images/Logo_empresa.png' %}" >
+            <h1>Bienvenido a StockControl</h1>
+            <a class="nav" href="{% url 'listar_productos' %}"> Listar Productos</a>
+            <br>
+            <a class="nav" href="{% url 'listar_proveedores' %}"> Listar Proveedores</a>
+            <br>
+            <a class="nav" href="{% url 'agregar_producto' %}"> Agregar Nuevo Producto</a>
+            <br>
+            <a class="nav" href="{% url 'agregar_proveedor' %}"> Agregar Nuevo Proveedor</a>
+            <br>
+        </form> 
+        <a href="{% url 'admin:index' %}" class="btn btn-secondary">Panel de Administración</a>
+   
+    </div>
+</body>
+</html>
